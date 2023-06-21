@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo&family=Lobster&family=Oswald:wght@300&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>User Details</h1>
+    <form id="my--form" class="form">
+        <label for="name">Name:</label>
+        <div class="input--group">
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <label for="email">Email:</label>
+        <div class="input--group">
+            <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <label for="course">Course:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="course-name-bsc" name="course" value="BSC">
+            <label for="course-name-bsc">BSC</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="course-name-msc" name="course" value="MSC">
+            <label for="course-name-msc">MSC</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="course-name-bba" name="course" value="BBA">
+            <label for="course-name-bba">BBA</label>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="course-name-mca" name="course" value="MCA">
+            <label for="course-name-mca">MCA</label>
+        </div>
+
+
+
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="gender-male" name="gender" value="male">
+            <label for="gender-male">Male</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="gender-female" name="gender" value="female">
+            <label for="gender-female">Female</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="gender-other" name="gender" value="other">
+            <label for="gender-other">Other</label>
+        </div>
+
+        
+
+        <input id="submit" class="submit" type="submit" value="submit">
+        <p id="demo"></p>
+        <button onclick="readValue()">Get the item values</button>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
